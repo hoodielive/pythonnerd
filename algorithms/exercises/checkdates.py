@@ -1,18 +1,18 @@
 # Extract a collection of birth dates from the user and determines
 # if each individual is at least 21 years of age.
 
-from date import Date
+from datetime import date
 
 def main():
     # Date before which a person must have been born to be 21 or older.
-    bornBefore = Date(6, 1, 1982)
+    bornBefore = date(6, 1, 1982)
 
     # Extract birth dates from the user and determine if 21 or older.
-    date = promptAndExtractDate()
+    dater = promptAndExtractDate()
     while date is not None:
         if date <= beforeBefore:
             print("Is at least 21 years of age: ", date)
-        date = promptAndExtractDate()
+        dater = promptAndExtractDate()
 
     # Prompts for and extracts the Gregorian date components. Returns a Date object or None when the user
     # has finished entering dates.
