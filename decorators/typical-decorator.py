@@ -1,6 +1,12 @@
+from functools import wraps
+
 def mapper(func):
+
+    @wraps(func)
     def inner(list_of_values):
-       return [func(value) for value in list_of_values] 
+
+        """This is the inner()"""
+        return [func(value) for value in list_of_values] 
     return inner
 
 @mapper
