@@ -5,4 +5,4 @@ def apply_discount(product, discount):
 
 shoes = {'name': 'Jordans', 'price': 14900}
 
-apply_discount(shoes, 0.25)
+print(apply_discount(shoes, 0.25))
