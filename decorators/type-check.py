@@ -12,3 +12,5 @@ def require_ints(decorated):
         # Run the decorated method, and return the result. 
         return decorated(*args, **kwarggs)
     return inner
+
+require_ints()
