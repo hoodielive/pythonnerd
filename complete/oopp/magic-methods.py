@@ -15,7 +15,7 @@ class Garage:
     def __len__(self):
         return len(self.cars)
     
-    def __getitem__(self, i):
+    def __getitem__(self, i): # unlocks for loops 
         return self.cars[i] 
 
 # Objects
@@ -26,3 +26,7 @@ print(ford.cars)
 print(len(ford.cars))
 print(len(ford))
 print(ford[0])
+
+# __getitem__ enables looping
+for car in ford:
+    print(car)
