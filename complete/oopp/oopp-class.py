@@ -13,8 +13,14 @@ class Student:
         return sum(self.grades) / len(self.grades) 
 
 student_one = Student('hood', [70, 88, 90, 99])
+
 print(student_one.__class__)
 print(student_one.name)
+
 student_two = Student('Jose', [99, 98, 97, 96])
 print(student_two.name)
+
+print(student_one.average()) # self is the object that calls this function 
+print(Student.average(student_one)) # or you can call it like this - but why would you?  
+
 
