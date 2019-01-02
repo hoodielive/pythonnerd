@@ -12,6 +12,7 @@ class WorkingStudent(Student):
         super().__init__(name, school)
         self.salary = salary
 
+    @property
     def weekly_salary(self):
         return self.salary * 37.5
 
@@ -21,3 +22,4 @@ print(larry.school)
 
 revjoel = WorkingStudent('Joel', 'MIT', 120.0) 
 print(revjoel.salary)
+print(revjoel.weekly_salary) 
