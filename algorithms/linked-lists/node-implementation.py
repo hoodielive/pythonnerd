@@ -44,7 +44,7 @@ class LinkedList(object):
             previousNode.nextNode = currentNode.nextNode
 
     # O(1)
-    def size(self):
+    def size1(self):
         return self.size
 
     # O(n) - calculate how many items are stored in the linked list
@@ -75,3 +75,11 @@ class LinkedList(object):
         while actualNode is not None:
             print("%d" % actualNode.data)
             actualNode = actualNode.nextNode
+
+linkedList = LinkedList()
+linkedList.insertStart(12)
+linkedList.insertStart(122)
+linkedList.insertStart(3)
+linkedList.insertEnd(31)
+linkedList = LinkedList()
+print(linkedList.size1())
