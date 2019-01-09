@@ -13,8 +13,10 @@ class LinkedList(object):
 
     # O(1) - insert data at the beginning of list  
     def insertStart(self, data):
-        self.size = self.size + 1 # increment the size
-        newNode = Node(data) # instantiate a new node object
+        # increment the size
+        self.size = self.size + 1
+        # instantiate a new node object
+        newNode = Node(data) 
 
         # if the head is Null, then it becomes the new node, root or head
         if not self.head:
@@ -77,7 +79,7 @@ class LinkedList(object):
             actualNode = actualNode.nextNode
 
 linkedList = LinkedList()
-linkedList.insertStart(12)
+print(linkedList.insertStart(12))
 linkedList.insertStart(122)
 linkedList.insertStart(3)
 linkedList.insertEnd(31)
