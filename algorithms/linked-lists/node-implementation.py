@@ -1,35 +1,41 @@
+# create class for Node
 class Node(object):
     def __init__(self, data):
         self.data = data
+        # make reference to next node (pointer)
         self.nextNode = None
-
 
 class LinkedList(object):
     def __init__(self):
+        # first node in linked list - root node of the tree (head)
         self.head = None
         self.size = 0
 
-    # O(1) 
+    # O(1) - insert data at the beginning of list  
     def insertStart(self, data):
-        self.size = self.size + 1
-        newNode = Node(data)
+        self.size = self.size + 1 # increment the size
+        newNode = Node(data) # instantiate a new node object
 
+        # if the head is Null, then it becomes the new node, root or head
         if not self.head:
             self.head = newNode
         else:
+            # or if the head is there, then newNode is the head of the linked list
             newNode.nextNode = self.head
+            # pointer - reference - head
             self.head = newNode
 
+    # O(1)
     def size(self):
         return self.size
 
-    # O(n)
+    # O(n) - calculate how many items are stored in the linked list
     def size2(self):
         actualNode = self.head
         size = 0
 
+        # if the size is Null then increment by 1 
         while actualNode is not None:
             size += 1
             actualNode = actualNode.nextNode
-
-            return size
+        return size
