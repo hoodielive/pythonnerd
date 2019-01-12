@@ -12,3 +12,6 @@ for line in lines:
     degree = person_data[3].capitalize()
     
     print(f'{name} is {age}, studying {degree} at {university}.')
+
+put_it_back = ','.join(['Klaus','34', 'French Quarter', 'World Domination'])
+print(put_it_back)
