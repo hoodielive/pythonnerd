@@ -1,0 +1,4 @@
+name,age,university,degree
+klaus,34,french quarter,world domination
+elijah,40,mystic falls,fashion
+fraeya,39,esthers grimiore,magick
