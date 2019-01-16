@@ -35,6 +35,10 @@ def list_books():
     for book in books:
         print(book)
 
+def prompt_read_book():
+    name = input('Enter the name of the book you just finished reading: ')
+    database.mark_book_as_read(name)
+
 # def list_books() # show all the books in our list
 # def prompt_read_book() # ask for a book name and change it to read in our list
 # def prompt_delete_book() # ask for book name and remove book from list
