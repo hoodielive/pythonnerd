@@ -5,6 +5,10 @@ name,author,read\n
 
 books_file = 'books.txt'
 
+def create_book_table():
+    with open(books_file, 'w'):
+        pass # just make sure file is there
+
 def add_book(name, author):
     with open('books.txt', 'at') as file:
         file.write(f'{name},{author},0\n')
