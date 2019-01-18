@@ -55,3 +55,6 @@ print(next(my_gen))
 print(my_gen.number)
 
 
+my_numbers = [x for x in [1,2,3,4,5]]
+my_numbers_gen = (x for x in [1,2,3,4,5])
+print(next(my_numbers_gen))
