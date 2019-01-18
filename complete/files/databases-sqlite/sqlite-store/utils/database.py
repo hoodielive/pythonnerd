@@ -16,7 +16,7 @@ def add_book(name: str, author: str) -> None:
         cursor = connection.cursor()
         cursor.execute('INSERT INTO books VALUES(?, ?, 0)', (name, author))
 
-def get_all_books() -> List[Dict(str, Union(str, int))] or Book:
+def get_all_books() -> List[Dict(str, Union(str, int))]:
     with DatabaseConnection('data.db') as connection:
         cursor = connection.cursor()
         cursor.execute('SELECT * FROM books')
