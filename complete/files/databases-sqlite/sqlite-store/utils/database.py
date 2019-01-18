@@ -16,6 +16,8 @@ def add_book(name, author):
     # ",0); DROP TABLE books; <--- SQL INJECTION ATTACK ---> So don't don't do the f'string shit
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
+    # later write a try/execept to except the error that comes when you try to add a value that already exists 
+    # go to app.py and do if statement, print "Book already exists" 
     cursor.execute('INSERT INTO books VALUES(?, ?, 0)', (name, author))
     connection.commit()
     connection.close()
