@@ -4,8 +4,6 @@ import sqlite3
 Concerned with storing and retrieving books from a sqlite3 database
 """
 
-books_file = 'books.json'
-
 def create_book_table():
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
@@ -18,16 +16,18 @@ def add_book(name, author):
     # ",0); DROP TABLE books; <--- SQL INJECTION ATTACK ---> So don't don't do the f'string shit
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
-    
     cursor.execute('INSERT INTO books VALUES(?, ?, 0)', (name, author))
-
     connection.commit()
     connection.close()
 
 
 def get_all_books():
-    with open(books_file, 'r') as file:
-        return json.load(file)
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM books')
+    books = [{'name': row[0], 'author': row[1], 'read': row[3]} for row in cursor.fetchall()]
+    connection.close() 
+    return books
 
 def _save_all_books(books):
     with open(books_file, 'w') as file:
