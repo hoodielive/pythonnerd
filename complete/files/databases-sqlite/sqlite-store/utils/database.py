@@ -10,14 +10,20 @@ def create_book_table():
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
     # SQLite supports 5 datatypes: null, integers, real(floating point), text(str), blobs(binary data field)
-    cursor.execute('CREATE TABLE books(name text primary key, author text, read integer)')
+    cursor.execute('CREATE TABLE IF NOT EXISTS books(name text primary key, author text, read integer)')
     connection.commit()
     connection.close()
 
 def add_book(name, author):
-    books = get_all_books()
-    books.append({'name': name, 'author': author, 'read': False})
-    _save_all_books(books)
+    # ",0); DROP TABLE books; <--- SQL INJECTION ATTACK ---> So don't don't do the f'string shit
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    
+    cursor.execute('INSERT INTO books VALUES(?, ?, 0)', (name, author))
+
+    connection.commit()
+    connection.close()
+
 
 def get_all_books():
     with open(books_file, 'r') as file:
