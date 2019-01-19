@@ -9,4 +9,15 @@ Notes on Subprocess Module
   - The subprocess module is intended to replace functions such as os.system(), os.spawnv(), variations of popen() in the os and popen2 modules
     and the commands module. 
 
+The command-line args are passed as a list of strings, which avoids the need for escaping quotes or other special characters that might be interpreted by the shell.
 
+run()
+  returns a CompletedProcess instance with information about the process such as the exit code and output
+
+- Setting the shell argument to a 'true' value causes subprocess to spawn an intermediate shell process, which then runs the command. 
+  The default is to run the command directly.
+  
+  import subprocess 
+
+  completed = subprocess.run('echo $HOME', shell=True)
+  print('returncode:', completed.returncode)
