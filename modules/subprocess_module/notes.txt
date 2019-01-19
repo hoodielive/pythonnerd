@@ -1,0 +1,12 @@
+Notes on Subprocess Module 
+
+- Supports 3 API(s) for working with processes.
+  - The run() function added in Python 3.5 which is a high-level API for running process and optionally collecting its output.
+    The functions call(), check_call(), and check_output() are 'former' high-level API, carried over from Python 2 (still supported).
+  - The Popen() class is a low-level API used to build the other API(s) and useful for more complex process interactions. 
+    The constructor for Popen takes args to set up the new process so that parent can communicate with it via pipes. Can close extra
+    file descriptors and ensuring the pipes are closed. (Built-in) instead of being handled separately by the application code.
+  - The subprocess module is intended to replace functions such as os.system(), os.spawnv(), variations of popen() in the os and popen2 modules
+    and the commands module. 
+
+
