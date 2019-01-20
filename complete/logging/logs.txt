@@ -1,0 +1,4 @@
+2019-01-20 13:05:15,555 INFO     [file_logging.py:13 This will not show up.]
+2019-01-20 13:05:15,556 WARNING  [file_logging.py:14 This will.]
+2019-01-20 13:05:15,556 DEBUG    [file_logging.py:15 This is a debug message.]
+2019-01-20 13:05:15,556 CRITICAL [file_logging.py:16 A critical error has occurred.]
