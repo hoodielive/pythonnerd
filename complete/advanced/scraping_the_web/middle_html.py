@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+import re
+
+from bs4 import BeautifulSoup
 
 ITEM_HTML = '''<html><head></head><body>
 <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
@@ -28,3 +31,30 @@ ITEM_HTML = '''<html><head></head><body>
 </li>
 </body></html>
 '''
+
+soup = BeautifulSoup(ITEM_HTML, 'html.parser')
+
+def find_item_name():
+    locator = 'article.product_pod h3 a' # CSS locator
+    item_link = soup.select_one(locator)
+    item_name = item_link.attrs['title']
+    print(item_name)
+
+
+def find_link():
+    locator = 'article.product_pod a'
+    item_link = soup.select_one(locator).attrs['href']
+    print(item_link)
+
+def find_price():
+    locator = 'article.product_pod p.price_color'
+    item_price = soup.select_one(locator).string
+    pattern = '£([0-9]+\.[0-9]+)'
+    matcher = re.search(pattern, item_price)
+    print(matcher.group(0))
+    print(float(matcher.group(1)))
+
+# invocations/conjurations
+find_item_name()
+find_link()
+find_price()
