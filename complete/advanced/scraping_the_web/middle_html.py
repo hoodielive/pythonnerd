@@ -57,8 +57,9 @@ def find_rating():
     locator = 'article.product_pod p.star-rating'
     star_rating_tag = soup.select_one(locator)
     classes = star_rating_tag.attrs['class']
-    e_class = [e.strip('Three') for e in classes]
-    print(e_class)
+    rating_classes = [r for r in classes if r != 'star-rating']
+    or_rating_classes = filter(lambda x: x != 'star-rating', classes)
+    print(rating_classes[0])
 
 
 # invocations/conjurations
