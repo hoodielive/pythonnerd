@@ -40,7 +40,6 @@ def find_item_name():
     item_name = item_link.attrs['title']
     print(item_name)
 
-
 def find_link():
     locator = 'article.product_pod a'
     item_link = soup.select_one(locator).attrs['href']
@@ -54,7 +53,17 @@ def find_price():
     print(matcher.group(0))
     print(float(matcher.group(1)))
 
+def find_rating():
+    locator = 'article.product_pod p.star-rating'
+    star_rating_tag = soup.select_one(locator)
+    classes = star_rating_tag.attrs['class']
+    e_class = [e.strip('Three') for e in classes]
+    print(e_class)
+
+
 # invocations/conjurations
 find_item_name()
 find_link()
 find_price()
+
+find_rating()
