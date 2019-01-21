@@ -29,6 +29,13 @@ ITEM_HTML = '''<html><head></head><body>
 </li>
 </body></html>
 '''
+class ParsedItemLocators:
+    """Locators for an item in the HTML Page."""
+    NAME_LOCATOR = 'article.product_pod h3 a'
+    LINK_LOCATOR = 'article.product_pod h3 a'
+    PRICE_LOCATOR = 'article.product_pod p.price_color'
+    RATING_LOCATOR = 'article.product_pod p.star-rating'
+
 class ParsedItem:
     """ A class to take in a HTML Page or part of it and find properties in it"""
 
@@ -37,28 +44,27 @@ class ParsedItem:
 
     @property
     def name(self):
-        locator = 'article.product_pod h3 a'
+        locator = ParsedItemLocators.NAME_LOCATOR
         item_name = self.soup.select_one(locator).attrs['title']
         return item_name
 
     @property
     def link(self):
-        locator = 'article.product_pod h3 a'
+        locator = ParsedItemLocators.LINK_LOCATOR
         item_url = self.soup.select_one(locator).attrs['href']
         return item_url
 
     @property
     def price(self):
-        locator = 'article.product_pod p.price_color'
+        locator = ParsedItemLocators.PRICE_LOCATOR
         item_price = self.soup.select_one(locator).string
-
         pattern = '£([0-9]+\.[0-9]+)'
         matcher = re.search(pattern, item_price)
         return float(matcher.group(1))
 
     @property
     def rating(self):
-        locator = 'article.product_pod p.star-rating'
+        locator = ParsedItemLocators.RATING_LOCATOR
         star_rating_element = self.soup.select_one(locator)
         classes = star_rating_element.attrs['class']
         rating_classes = filter(lambda x: x != 'star-rating', classes)
