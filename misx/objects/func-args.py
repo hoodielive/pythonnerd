@@ -19,8 +19,10 @@ def add_spam(menu = []):
     menu.append("spam")
     return menu
 
-add_spam('avacado')
-add_spam('avacado')
+breakfast = ['avacado', 'tomatoes']
+print(add_spam(breakfast))
+print(add_spam(breakfast))
+
 
 def add_spam_better_way(menu=None):
     if menu is None:
@@ -28,7 +30,5 @@ def add_spam_better_way(menu=None):
     menu.append('spam')
     return menu
 
-add_spam_better_way('avacado')
-add_spam_better_way('avacado')
-
-
+print(add_spam_better_way())
+print(add_spam_better_way())
