@@ -1,0 +1,65 @@
+27-01-2019 10:09:23 INFO     [app.py:14] Loading books list.
+27-01-2019 10:09:23 INFO     [app.py:16] Requesting http://books.toscrape.com
+27-01-2019 10:09:24 INFO     [all_books_page.py:25] Found number of catalogue pages available: `
+            
+                Page 1 of 50
+            
+            `
+27-01-2019 10:09:24 INFO     [all_books_page.py:29] Extracted number of pages as integer: `50`.
+27-01-2019 10:09:24 INFO     [app.py:25] Going through 50 pages of books...
+27-01-2019 10:09:24 INFO     [all_books_page.py:25] Found number of catalogue pages available: `
+            
+                Page 1 of 50
+            
+            `
+27-01-2019 10:09:24 INFO     [all_books_page.py:29] Extracted number of pages as integer: `50`.
+27-01-2019 10:09:24 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-1.html
+27-01-2019 10:09:24 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-2.html
+27-01-2019 10:09:24 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-3.html
+27-01-2019 10:09:24 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-4.html
+27-01-2019 10:09:25 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-5.html
+27-01-2019 10:09:25 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-6.html
+27-01-2019 10:09:25 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-7.html
+27-01-2019 10:09:25 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-8.html
+27-01-2019 10:09:26 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-9.html
+27-01-2019 10:09:26 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-10.html
+27-01-2019 10:09:26 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-11.html
+27-01-2019 10:09:26 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-12.html
+27-01-2019 10:09:27 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-13.html
+27-01-2019 10:09:27 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-14.html
+27-01-2019 10:09:27 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-15.html
+27-01-2019 10:09:27 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-16.html
+27-01-2019 10:09:28 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-17.html
+27-01-2019 10:09:28 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-18.html
+27-01-2019 10:09:28 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-19.html
+27-01-2019 10:09:28 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-20.html
+27-01-2019 10:09:29 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-21.html
+27-01-2019 10:09:29 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-22.html
+27-01-2019 10:09:29 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-23.html
+27-01-2019 10:09:29 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-24.html
+27-01-2019 10:09:30 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-25.html
+27-01-2019 10:09:30 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-26.html
+27-01-2019 10:09:30 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-27.html
+27-01-2019 10:09:30 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-28.html
+27-01-2019 10:09:31 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-29.html
+27-01-2019 10:09:31 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-30.html
+27-01-2019 10:09:31 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-31.html
+27-01-2019 10:09:31 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-32.html
+27-01-2019 10:09:32 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-33.html
+27-01-2019 10:09:32 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-34.html
+27-01-2019 10:09:32 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-35.html
+27-01-2019 10:09:32 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-36.html
+27-01-2019 10:09:33 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-37.html
+27-01-2019 10:09:33 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-38.html
+27-01-2019 10:09:33 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-39.html
+27-01-2019 10:09:33 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-40.html
+27-01-2019 10:09:34 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-41.html
+27-01-2019 10:09:34 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-42.html
+27-01-2019 10:09:34 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-43.html
+27-01-2019 10:09:34 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-44.html
+27-01-2019 10:09:35 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-45.html
+27-01-2019 10:09:35 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-46.html
+27-01-2019 10:09:35 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-47.html
+27-01-2019 10:09:35 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-48.html
+27-01-2019 10:09:36 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-49.html
+27-01-2019 10:09:36 INFO     [app.py:29] Requesting http://books.toscrape.com/catalogue/page-50.html
