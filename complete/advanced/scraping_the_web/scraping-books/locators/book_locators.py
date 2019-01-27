@@ -1,4 +1,5 @@
 class BookLocator:
-    TITLE: 'article.product_pod p.star-rating',
-    PRICE: 'article.product_pod div.product_price'
-    AVAILABILITY: 'article.product_prod p.instock'
+    NAME_LOCATOR = 'article.product_pod h3 a'
+    LINK_LOCATOR = 'article.product_prod h3 a'
+    PRICE_LOCATOR = 'article.product_pod p.price_color'
+    RATING_LOCATOR = 'article.product_pod p.star-rating'
