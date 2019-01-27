@@ -8,4 +8,4 @@ class AllBooksPage:
 
     @property
     def books(self):
-        return [BookParser(e) for e in self.soup.select(AllBooksPageLocators.BOOKS)
+        return [BookParser(e) for e in self.soup.select(AllBooksPageLocators.BOOKS)]
