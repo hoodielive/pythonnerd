@@ -5,3 +5,6 @@ a,b,c = myfunction()
 print(a)
 print(b)
 print(c)
+
+x = myfunction() 
+print(x)
