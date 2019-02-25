@@ -1,3 +1,7 @@
 import reader.reader
 
-print(reader.reader.__file___)
+reader.reader.__file__
+
+r = reader.reader.Reader('reader/reader.py')
+
+print(r)
