@@ -796,7 +796,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "static_types_speed.cy",
+  "static_types_speed.pyx",
 };
 
 /*--- Type declarations ---*/
@@ -1101,7 +1101,7 @@ static const char __pyx_k_range[] = "range";
 static const char __pyx_k_integrate_f[] = "integrate_f";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_static_types_speed[] = "static_types_speed";
-static const char __pyx_k_static_types_speed_cy[] = "static_types_speed.cy";
+static const char __pyx_k_static_types_speed_pyx[] = "static_types_speed.pyx";
 static PyObject *__pyx_n_s_I;
 static PyObject *__pyx_n_s_N;
 static PyObject *__pyx_n_s_a;
@@ -1116,7 +1116,7 @@ static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_n_s_range;
 static PyObject *__pyx_n_s_s;
 static PyObject *__pyx_n_s_static_types_speed;
-static PyObject *__pyx_kp_s_static_types_speed_cy;
+static PyObject *__pyx_kp_s_static_types_speed_pyx;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_x;
 static PyObject *__pyx_pf_18static_types_speed_f(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_x); /* proto */
@@ -1127,7 +1127,7 @@ static PyObject *__pyx_codeobj__2;
 static PyObject *__pyx_codeobj__4;
 /* Late includes */
 
-/* "static_types_speed.cy":3
+/* "static_types_speed.pyx":3
  * import cython
  * 
  * def f(double x):             # <<<<<<<<<<<<<<
@@ -1165,7 +1165,7 @@ static PyObject *__pyx_pf_18static_types_speed_f(CYTHON_UNUSED PyObject *__pyx_s
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("f", 0);
 
-  /* "static_types_speed.cy":4
+  /* "static_types_speed.pyx":4
  * 
  * def f(double x):
  *     return x**2-42             # <<<<<<<<<<<<<<
@@ -1179,7 +1179,7 @@ static PyObject *__pyx_pf_18static_types_speed_f(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "static_types_speed.cy":3
+  /* "static_types_speed.pyx":3
  * import cython
  * 
  * def f(double x):             # <<<<<<<<<<<<<<
@@ -1198,7 +1198,7 @@ static PyObject *__pyx_pf_18static_types_speed_f(CYTHON_UNUSED PyObject *__pyx_s
   return __pyx_r;
 }
 
-/* "static_types_speed.cy":6
+/* "static_types_speed.pyx":6
  *     return x**2-42
  * 
  * def integrate_f(double a, double b, int N):             # <<<<<<<<<<<<<<
@@ -1297,7 +1297,7 @@ static PyObject *__pyx_pf_18static_types_speed_2integrate_f(CYTHON_UNUSED PyObje
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("integrate_f", 0);
 
-  /* "static_types_speed.cy":9
+  /* "static_types_speed.pyx":9
  *     cdef int i
  *     cdef double s, dx
  *     s = 0             # <<<<<<<<<<<<<<
@@ -1306,7 +1306,7 @@ static PyObject *__pyx_pf_18static_types_speed_2integrate_f(CYTHON_UNUSED PyObje
  */
   __pyx_v_s = 0.0;
 
-  /* "static_types_speed.cy":10
+  /* "static_types_speed.pyx":10
  *     cdef double s, dx
  *     s = 0
  *     dx = (b-a)/N             # <<<<<<<<<<<<<<
@@ -1320,7 +1320,7 @@ static PyObject *__pyx_pf_18static_types_speed_2integrate_f(CYTHON_UNUSED PyObje
   }
   __pyx_v_dx = (__pyx_t_1 / __pyx_v_N);
 
-  /* "static_types_speed.cy":11
+  /* "static_types_speed.pyx":11
  *     s = 0
  *     dx = (b-a)/N
  *     for I in range(N):             # <<<<<<<<<<<<<<
@@ -1332,7 +1332,7 @@ static PyObject *__pyx_pf_18static_types_speed_2integrate_f(CYTHON_UNUSED PyObje
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_I = __pyx_t_4;
 
-    /* "static_types_speed.cy":12
+    /* "static_types_speed.pyx":12
  *     dx = (b-a)/N
  *     for I in range(N):
  *         s += f(a+i*dx)             # <<<<<<<<<<<<<<
@@ -1369,7 +1369,7 @@ static PyObject *__pyx_pf_18static_types_speed_2integrate_f(CYTHON_UNUSED PyObje
     __pyx_v_s = __pyx_t_1;
   }
 
-  /* "static_types_speed.cy":13
+  /* "static_types_speed.pyx":13
  *     for I in range(N):
  *         s += f(a+i*dx)
  *     return s*dx             # <<<<<<<<<<<<<<
@@ -1381,7 +1381,7 @@ static PyObject *__pyx_pf_18static_types_speed_2integrate_f(CYTHON_UNUSED PyObje
   __pyx_t_7 = 0;
   goto __pyx_L0;
 
-  /* "static_types_speed.cy":6
+  /* "static_types_speed.pyx":6
  *     return x**2-42
  * 
  * def integrate_f(double a, double b, int N):             # <<<<<<<<<<<<<<
@@ -1464,7 +1464,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
   {&__pyx_n_s_s, __pyx_k_s, sizeof(__pyx_k_s), 0, 0, 1, 1},
   {&__pyx_n_s_static_types_speed, __pyx_k_static_types_speed, sizeof(__pyx_k_static_types_speed), 0, 0, 1, 1},
-  {&__pyx_kp_s_static_types_speed_cy, __pyx_k_static_types_speed_cy, sizeof(__pyx_k_static_types_speed_cy), 0, 0, 1, 0},
+  {&__pyx_kp_s_static_types_speed_pyx, __pyx_k_static_types_speed_pyx, sizeof(__pyx_k_static_types_speed_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_x, __pyx_k_x, sizeof(__pyx_k_x), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
@@ -1480,7 +1480,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "static_types_speed.cy":3
+  /* "static_types_speed.pyx":3
  * import cython
  * 
  * def f(double x):             # <<<<<<<<<<<<<<
@@ -1490,9 +1490,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_x); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_static_types_speed_cy, __pyx_n_s_f, 3, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_static_types_speed_pyx, __pyx_n_s_f, 3, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 3, __pyx_L1_error)
 
-  /* "static_types_speed.cy":6
+  /* "static_types_speed.pyx":6
  *     return x**2-42
  * 
  * def integrate_f(double a, double b, int N):             # <<<<<<<<<<<<<<
@@ -1502,7 +1502,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__3 = PyTuple_Pack(7, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_N, __pyx_n_s_i, __pyx_n_s_s, __pyx_n_s_dx, __pyx_n_s_I); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(3, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_static_types_speed_cy, __pyx_n_s_integrate_f, 6, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(3, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_static_types_speed_pyx, __pyx_n_s_integrate_f, 6, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -1779,7 +1779,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "static_types_speed.cy":3
+  /* "static_types_speed.pyx":3
  * import cython
  * 
  * def f(double x):             # <<<<<<<<<<<<<<
@@ -1791,7 +1791,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_f, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "static_types_speed.cy":6
+  /* "static_types_speed.pyx":6
  *     return x**2-42
  * 
  * def integrate_f(double a, double b, int N):             # <<<<<<<<<<<<<<
@@ -1803,7 +1803,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_integrate_f, __pyx_t_1) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "static_types_speed.cy":1
+  /* "static_types_speed.pyx":1
  * import cython             # <<<<<<<<<<<<<<
  * 
  * def f(double x):
