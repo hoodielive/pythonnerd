@@ -28,3 +28,5 @@ for num in two_dimensional_array:
         maximum = num
 
 print(maximum)
+
+print(one_dimensional_array)
